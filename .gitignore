@@ -1,8 +1,39 @@
-.DS_Store
-Thumbs.db
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-.venv/
-.env
+*$py.class
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-data/raw/*.csv
+
+# Testing & Type Checking & Linters
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# Temporary / runtime artifacts
+*.log
+*.tmp
+
+# Raw and bulky datasets (protects raw dataset from accidental commits)
+data/raw/*
+data/*.csv
+data/**/*.csv
+!data/raw/.gitkeep
